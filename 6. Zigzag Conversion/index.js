@@ -1,4 +1,4 @@
-import config from "./config.json" assert {type: "json"};
+import config from "./config.js";
 
 /**
  * @param {string} s
@@ -39,6 +39,11 @@ const convert = function (s, numRows) {
   return resArr.map((arr) => arr.join("")).join("");
 };
 
-for (let i = 0; i < config.length; i++) {
-  console.log(convert(...config[i].inputs), config[i].output);
+// noinspection JSUnusedGlobalSymbols
+export function run() {
+  for (const c of config) {
+    // noinspection JSCheckFunctionSignatures
+    console.log("Input:", ...c.input, "Output:", convert(...c.input));
+    console.log("Expected:", c.output);
+  }
 }

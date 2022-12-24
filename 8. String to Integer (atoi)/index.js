@@ -1,4 +1,4 @@
-import config from "./config.json" assert { type: "json" };
+import config from "./config.js";
 
 /**
  * @param {string} s
@@ -21,7 +21,11 @@ const myAtoi = function (s) {
   }
 };
 
-for (const c of config) {
-  console.log("Input:", ...c.input, "Output:", myAtoi(...c.input));
-  console.log("Expected:", c.output);
+// noinspection,JSUnusedGlobalSymbols
+export function run() {
+  for (const c of config) {
+    // noinspection JSCheckFunctionSignatures
+    console.log("Input:", ...c.input, "Output:", myAtoi(...c.input));
+    console.log("Expected:", c.output);
+  }
 }

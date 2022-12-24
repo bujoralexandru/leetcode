@@ -1,4 +1,4 @@
-import config from "./config.json" assert {type: "json"};
+import config from "./config.js";
 
 /**
  * @param {number} x
@@ -10,7 +10,11 @@ const reverse = function (x) {
   return res > 2 ** 31 - 1 || res < -(2 ** 31) ? 0 : res;
 };
 
-for (const c of config) {
-  console.log("Input:", ...c.input, "Output:", reverse(...c.input));
-  console.log("Expected:", c.output);
+// noinspection JSUnusedGlobalSymbols
+export function run() {
+  for (const c of config) {
+    // noinspection JSCheckFunctionSignatures
+    console.log("Input:", ...c.input, "Output:", reverse(...c.input));
+    console.log("Expected:", c.output);
+  }
 }
