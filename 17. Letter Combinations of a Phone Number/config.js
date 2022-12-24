@@ -1,0 +1,14 @@
+export default [
+  {
+    input: ['23'],
+    output: ['ad', 'ae', 'af', 'bd', 'be', 'bf', 'cd', 'ce', 'cf'],
+  },
+  {
+    input: [''],
+    output: [],
+  },
+  {
+    input: ['2'],
+    output: ['a', 'b', 'c'],
+  },
+]

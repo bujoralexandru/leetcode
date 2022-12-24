@@ -11,4 +11,4 @@ export default [
     input: [120],
     output: 21,
   },
-];
+]
