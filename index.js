@@ -6,9 +6,15 @@ const paths = [
   '15. 3Sum',
   '16. 3Sum Closest',
   '17. Letter Combinations of a Phone Number',
+  '55. Jump Game',
+  '2389. Longest Subsequence With Limited Sum',
 ]
 
-for (const path of paths) {
+const runOnly = [
+  // '55. Jump Game'
+]
+
+for (const path of runOnly.length ? runOnly : paths) {
   const problem = await import(`./${path}/index.js`)
   if (!problem.run) {
     console.log(`Problem ${path} is not solved yet.`)
