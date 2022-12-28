@@ -5,5 +5,8 @@
   "license": "MIT",
   "devDependencies": {
     "prettier": "^2.8.1"
+  },
+  "dependencies": {
+    "@datastructures-js/priority-queue": "^4.1.0"
   }
 }
