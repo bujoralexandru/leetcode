@@ -58,6 +58,6 @@ export default [
         [1, 1],
       ],
     ],
-    output: [0, 2, 3, 1],
+    output: [5, 0, 1, 3, 2, 4],
   },
 ]
