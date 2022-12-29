@@ -38,7 +38,6 @@ const getOrder = function (tasks) {
 
   while (queue.size()) {
     const dequeue = queue.dequeue()
-    console.log(time, dequeue)
     result.push(dequeue.element[2])
   }
 
