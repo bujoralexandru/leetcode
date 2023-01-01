@@ -7,6 +7,7 @@ const paths = [
   '16. 3Sum Closest',
   '17. Letter Combinations of a Phone Number',
   '55. Jump Game',
+  '290. Word Pattern',
   '797. All Paths From Source to Target',
   '980. Unique Paths III',
   '1834. Single-Threaded CPU',
@@ -21,7 +22,8 @@ const runOnly = [
   // '1962. Remove Stones to Minimize the Total',
   // '1834. Single-Threaded CPU',
   // '797. All Paths From Source to Target',
-  '980. Unique Paths III',
+  // '980. Unique Paths III',
+  '290. Word Pattern',
 ]
 
 for (const path of runOnly.length ? runOnly : paths) {
