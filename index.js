@@ -8,6 +8,7 @@ const paths = [
   '17. Letter Combinations of a Phone Number',
   '55. Jump Game',
   '290. Word Pattern',
+  '520. Detect Capital',
   '797. All Paths From Source to Target',
   '980. Unique Paths III',
   '1834. Single-Threaded CPU',
@@ -23,7 +24,8 @@ const runOnly = [
   // '1834. Single-Threaded CPU',
   // '797. All Paths From Source to Target',
   // '980. Unique Paths III',
-  '290. Word Pattern',
+  // '290. Word Pattern',
+  '520. Detect Capital',
 ]
 
 for (const path of runOnly.length ? runOnly : paths) {
