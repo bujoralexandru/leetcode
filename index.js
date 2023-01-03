@@ -10,6 +10,7 @@ const paths = [
   '290. Word Pattern',
   '520. Detect Capital',
   '797. All Paths From Source to Target',
+  '944. Delete Columns to Make Sorted',
   '980. Unique Paths III',
   '1834. Single-Threaded CPU',
   '1962. Remove Stones to Minimize the Total',
@@ -25,7 +26,8 @@ const runOnly = [
   // '797. All Paths From Source to Target',
   // '980. Unique Paths III',
   // '290. Word Pattern',
-  '520. Detect Capital',
+  // '520. Detect Capital',
+  '944. Delete Columns to Make Sorted',
 ]
 
 for (const path of runOnly.length ? runOnly : paths) {
