@@ -14,6 +14,7 @@ const paths = [
   '980. Unique Paths III',
   '1834. Single-Threaded CPU',
   '1962. Remove Stones to Minimize the Total',
+  '2244. Minimum Rounds to Complete All Tasks',
   '2279. Maximum Bags With Full Capacity of Rocks',
   '2389. Longest Subsequence With Limited Sum',
 ]
@@ -27,7 +28,8 @@ const runOnly = [
   // '980. Unique Paths III',
   // '290. Word Pattern',
   // '520. Detect Capital',
-  '944. Delete Columns to Make Sorted',
+  // '944. Delete Columns to Make Sorted',
+  '2244. Minimum Rounds to Complete All Tasks',
 ]
 
 for (const path of runOnly.length ? runOnly : paths) {
