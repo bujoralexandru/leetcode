@@ -8,6 +8,7 @@ const paths = [
   '17. Letter Combinations of a Phone Number',
   '55. Jump Game',
   '290. Word Pattern',
+  '452. Minimum Number of Arrows to Burst Balloons',
   '520. Detect Capital',
   '797. All Paths From Source to Target',
   '944. Delete Columns to Make Sorted',
@@ -29,7 +30,8 @@ const runOnly = [
   // '290. Word Pattern',
   // '520. Detect Capital',
   // '944. Delete Columns to Make Sorted',
-  '2244. Minimum Rounds to Complete All Tasks',
+  // '2244. Minimum Rounds to Complete All Tasks',
+  '452. Minimum Number of Arrows to Burst Balloons',
 ]
 
 for (const path of runOnly.length ? runOnly : paths) {
