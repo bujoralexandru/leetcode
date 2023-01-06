@@ -13,6 +13,7 @@ const paths = [
   '797. All Paths From Source to Target',
   '944. Delete Columns to Make Sorted',
   '980. Unique Paths III',
+  '1833. Maximum Ice Cream Bars',
   '1834. Single-Threaded CPU',
   '1962. Remove Stones to Minimize the Total',
   '2244. Minimum Rounds to Complete All Tasks',
@@ -20,19 +21,7 @@ const paths = [
   '2389. Longest Subsequence With Limited Sum',
 ]
 
-const runOnly = [
-  // '55. Jump Game'
-  // '2279. Maximum Bags With Full Capacity of Rocks',
-  // '1962. Remove Stones to Minimize the Total',
-  // '1834. Single-Threaded CPU',
-  // '797. All Paths From Source to Target',
-  // '980. Unique Paths III',
-  // '290. Word Pattern',
-  // '520. Detect Capital',
-  // '944. Delete Columns to Make Sorted',
-  // '2244. Minimum Rounds to Complete All Tasks',
-  '452. Minimum Number of Arrows to Burst Balloons',
-]
+const runOnly = ['1833. Maximum Ice Cream Bars']
 
 for (const path of runOnly.length ? runOnly : paths) {
   const problem = await import(`./${path}/index.js`)
