@@ -7,6 +7,7 @@ const paths = [
   '16. 3Sum Closest',
   '17. Letter Combinations of a Phone Number',
   '55. Jump Game',
+  '134. Gas Station',
   '290. Word Pattern',
   '452. Minimum Number of Arrows to Burst Balloons',
   '520. Detect Capital',
@@ -21,7 +22,7 @@ const paths = [
   '2389. Longest Subsequence With Limited Sum',
 ]
 
-const runOnly = ['1833. Maximum Ice Cream Bars']
+const runOnly = ['134. Gas Station']
 
 for (const path of runOnly.length ? runOnly : paths) {
   const problem = await import(`./${path}/index.js`)
