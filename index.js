@@ -16,6 +16,7 @@ const paths = [
   '944. Delete Columns to Make Sorted',
   '980. Unique Paths III',
   '1443. Minimum Time to Collect All Apples in a Tree',
+  '1519. Number of Nodes in the Sub-Tree With the Same Label',
   '1833. Maximum Ice Cream Bars',
   '1834. Single-Threaded CPU',
   '1962. Remove Stones to Minimize the Total',
@@ -24,7 +25,7 @@ const paths = [
   '2389. Longest Subsequence With Limited Sum',
 ]
 
-const runOnly = ['1443. Minimum Time to Collect All Apples in a Tree']
+const runOnly = ['1519. Number of Nodes in the Sub-Tree With the Same Label']
 
 for (const path of runOnly.length ? runOnly : paths) {
   const problem = await import(`./${path}/index.js`)
