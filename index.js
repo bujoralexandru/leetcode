@@ -21,11 +21,12 @@ const paths = [
   '1834. Single-Threaded CPU',
   '1962. Remove Stones to Minimize the Total',
   '2244. Minimum Rounds to Complete All Tasks',
+  '2246. Longest Path With Different Adjacent Characters',
   '2279. Maximum Bags With Full Capacity of Rocks',
   '2389. Longest Subsequence With Limited Sum',
 ]
 
-const runOnly = ['1519. Number of Nodes in the Sub-Tree With the Same Label']
+const runOnly = ['2246. Longest Path With Different Adjacent Characters']
 
 for (const path of runOnly.length ? runOnly : paths) {
   const problem = await import(`./${path}/index.js`)
