@@ -15,6 +15,7 @@ const paths = [
   '797. All Paths From Source to Target',
   '944. Delete Columns to Make Sorted',
   '980. Unique Paths III',
+  '1061. Lexicographically Smallest Equivalent String',
   '1443. Minimum Time to Collect All Apples in a Tree',
   '1519. Number of Nodes in the Sub-Tree With the Same Label',
   '1833. Maximum Ice Cream Bars',
@@ -26,7 +27,7 @@ const paths = [
   '2389. Longest Subsequence With Limited Sum',
 ]
 
-const runOnly = ['2246. Longest Path With Different Adjacent Characters']
+const runOnly = ['1061. Lexicographically Smallest Equivalent String']
 
 for (const path of runOnly.length ? runOnly : paths) {
   const problem = await import(`./${path}/index.js`)
