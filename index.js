@@ -14,6 +14,7 @@ const paths = [
   '452. Minimum Number of Arrows to Burst Balloons',
   '520. Detect Capital',
   '797. All Paths From Source to Target',
+  '926. Flip String to Monotone Increasing',
   '944. Delete Columns to Make Sorted',
   '980. Unique Paths III',
   '1061. Lexicographically Smallest Equivalent String',
@@ -28,7 +29,7 @@ const paths = [
   '2389. Longest Subsequence With Limited Sum',
 ]
 
-const runOnly = ['57. Insert Interval']
+const runOnly = ['926. Flip String to Monotone Increasing']
 
 for (const path of runOnly.length ? runOnly : paths) {
   const problem = await import(`./${path}/index.js`)
