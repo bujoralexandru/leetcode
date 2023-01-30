@@ -27,9 +27,10 @@ const paths = [
   '2246. Longest Path With Different Adjacent Characters',
   '2279. Maximum Bags With Full Capacity of Rocks',
   '2389. Longest Subsequence With Limited Sum',
+  '[custom] Generate permutations',
 ]
 
-const runOnly = ['926. Flip String to Monotone Increasing']
+const runOnly = ['[custom] Generate permutations']
 
 for (const path of runOnly.length ? runOnly : paths) {
   const problem = await import(`./${path}/index.js`)
